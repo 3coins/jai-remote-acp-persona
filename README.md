@@ -204,4 +204,3 @@ Same as Jupyter AI and ACP SDK licenses.
 - [Jupyter AI](https://github.com/jupyterlab/jupyter-ai)
 - [Jupyter AI ACP Client](https://github.com/jupyter-ai-contrib/jupyter-ai-acp-client)
 - [Agent-Client Protocol](https://github.com/3coins/agent-client-protocol)
-- [IMPLEMENTATION.md](./IMPLEMENTATION.md) - Detailed implementation notes
