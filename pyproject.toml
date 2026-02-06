@@ -1,0 +1,20 @@
+[project]
+name = "jai-remote-acp-persona"
+version = "0.1.0"
+description = "Jupyter AI persona that connects to a remote ACP server"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "agent-client-protocol @ git+https://github.com/3coins/python-sdk.git@http-ws-transport",
+    "jupyter-ai @ git+https://github.com/jupyterlab/jupyter-ai.git",
+    "jupyter-ai-acp-client @ git+https://github.com/jupyter-ai-contrib/jupyter-ai-acp-client.git",
+]
+
+[project.scripts]
+jai-remote-acp-client = "jai_remote_acp_persona.client:main"
+
+[project.entry-points."jupyter_ai.personas"]
+example-remote-acp = "jai_remote_acp_persona.example_persona:ExampleRemotePersona"
+
+[tool.uv]
+package = true
